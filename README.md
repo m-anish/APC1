@@ -13,6 +13,8 @@ This repository contains a MicroPython library to interface with the APC1 weathe
 
 ## Example Usage
 
+### Reading Data from All Sensors
+
 ```python
 import APC1
 
@@ -29,3 +31,54 @@ all_sensor_data = apc1.get_all_sensor_data()
 # Print all the sensor data in a readable format
 for sensor_name, data in all_sensor_data.items():
     print(f"{sensor_name}: {data['value']} {data['unit']} - {data['description']}")
+```
+
+This example initializes the APC1 sensor with the default I2C pins (`SCL=1`, `SDA=0`, `id=0`), fetches data for all sensors, and prints the name, value, unit, and description of each sensor.
+
+### Reading a Single Sensor Value (e.g., PM2.5)
+
+```python
+import APC1
+
+# Initialize the APC1 instance with default pin values (scl=1, sda=0, id=0)
+apc1 = APC1.APC1()
+
+# Get and print data for PM2.5 sensor
+pm25_value, unit, description = apc1.get_sensor_data('PM2.5')
+
+# Print the PM2.5 data
+print(f"PM2.5: {pm25_value} {unit} - {description}")
+```
+
+In this example, the code reads and prints the value of the **PM2.5** sensor (Mass Concentration of Particulate Matter with a diameter of less than 2.5 micrometers). It also prints the unit and description for the PM2.5 sensor.
+
+## Library Functions
+
+- **`get_reg_map()`**: Returns the register map for the APC1 sensor.
+- **`read_sensor_data(register, num_bytes)`**: Reads raw data from a specific register.
+- **`get_sensor_data(register_name)`**: Retrieves and parses sensor data from a specified register.
+- **`get_all_sensor_data()`**: Retrieves and parses data from all registers and returns a dictionary with the sensor name, value, unit, and description.
+
+## Installation
+
+To use this library, simply place the `APC1.py` file in your MicroPython project directory.
+
+```bash
+# Example installation on your device
+cp APC1.py /flash/lib
+```
+
+## License
+
+This library is licensed under the **GNU General Public License v3.0 (GPLv3)**.
+
+See [LICENSE](LICENSE) for more details.
+
+## Credits
+
+- **APC1 Weather Sensor**: Manufacturer's documentation and specifications.
+- **MicroPython**: For providing an excellent platform for embedded programming.
+
+## Contact
+
+For any issues, feel free to open an issue on this repository.

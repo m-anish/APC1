@@ -78,6 +78,7 @@ See [LICENSE](LICENSE) for more details.
 
 - **APC1 Weather Sensor**: Manufacturer's documentation and specifications.
 - **MicroPython**: For providing an excellent platform for embedded programming.
+- **ChatGPT**: For assisting with code and documentation snippets.
 
 ## Contact
 

@@ -61,12 +61,7 @@ In this example, the code reads and prints the value of the **PM2.5** sensor (Ma
 
 ## Installation
 
-To use this library, simply place the `APC1.py` file in your MicroPython project directory.
-
-```bash
-# Example installation on your device
-cp APC1.py <device>/lib
-```
+To use this library, simply copy the folder `apc1` into a subfolder `lib`. 
 
 ## License
 

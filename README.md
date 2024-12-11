@@ -75,6 +75,7 @@ See [LICENSE](LICENSE) for more details.
 - **MicroPython**: For providing an excellent platform for embedded programming.
 - **ChatGPT**: For assisting with code and documentation snippets.
 
-## Contact
+## Get involved
 
-For any issues, feel free to open an issue on this repository.
+* For any issues, feel free to open an issue on this repository.
+* Contributions in the form of Pull Requests are welcome.

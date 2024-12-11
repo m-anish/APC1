@@ -65,7 +65,7 @@ To use this library, simply place the `APC1.py` file in your MicroPython project
 
 ```bash
 # Example installation on your device
-cp APC1.py /flash/lib
+cp APC1.py <device>/lib
 ```
 
 ## License

@@ -61,7 +61,7 @@ In this example, the code reads and prints the value of the **PM2.5** sensor (Ma
 
 ## Installation
 
-To use this library, simply copy the folder `apc1` into a subfolder `lib`. 
+To use this library, simply copy the folder `apc1` into a subfolder `lib` on the target device.
 
 ## License
 
